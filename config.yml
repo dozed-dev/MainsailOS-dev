@@ -57,6 +57,7 @@
     ARCH: arm64
     DISTRO: armbian
     IMAGE_ENLARGEROOT: 5000
+  special_modules: []
 
 - name: armbian-orangepi_lite2-bookworm
   type: armbian
@@ -66,3 +67,4 @@
     ARCH: arm64
     DISTRO: armbian
     IMAGE_ENLARGEROOT: 5000
+  special_modules: []
