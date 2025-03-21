@@ -48,3 +48,21 @@
     IMAGE_ENLARGEROOT: 5000
   special_modules:
     - 20-opi-zero2
+
+- name: armbian-orangepi_zero3-bookworm
+  type: armbian
+  img_download_url: "https://github.com/dozed-dev/armbian-builds/releases/latest/download/armbian-orangepi_zero3_bookworm.img.xz"
+  img_hash_url: "https://github.com/dozed-dev/armbian-builds/releases/latest/download/armbian-orangepi_zero3_bookworm.img.xz.sha256"
+  env:
+    ARCH: arm64
+    DISTRO: armbian
+    IMAGE_ENLARGEROOT: 5000
+
+- name: armbian-orangepi_lite2-bookworm
+  type: armbian
+  img_download_url: "https://github.com/dozed-dev/armbian-builds/releases/latest/download/armbian-orangepi_lite2_bookworm.img.xz"
+  img_hash_url: "https://github.com/dozed-dev/armbian-builds/releases/latest/download/armbian-orangepi_lite2_bookworm.img.xz.sha256"
+  env:
+    ARCH: arm64
+    DISTRO: armbian
+    IMAGE_ENLARGEROOT: 5000
