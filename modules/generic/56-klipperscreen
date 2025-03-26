@@ -21,6 +21,7 @@ REPO="https://github.com/KlipperScreen/KlipperScreen.git"
 SRC_DIR="/home/${BASE_USER}/KlipperScreen"
 KS_BUILD_INSTALL_SH="/home/${BASE_USER}/KlipperScreen/scripts/KlipperScreen-install.sh"
 
+
 ########################################
 # Switch to BASE_USER home directory   #
 ########################################
@@ -37,7 +38,12 @@ sudo -u "${BASE_USER}" git clone ${REPO} "${SRC_DIR}"
 # Run KlipperScreen install routine    #
 ########################################
 
-sudo -u "${BASE_USER}" "${KS_BUILD_INSTALL_SH}"
+sudo -u "${BASE_USER}" env \
+    BACKEND="X" \
+    SERVICE="Y" \
+    START=0 \
+    NETWORK="N" \
+    "${KS_BUILD_INSTALL_SH}"
 
 ########################################
 # Add config to moonraker.conf         #
